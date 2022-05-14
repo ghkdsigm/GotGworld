@@ -3151,7 +3151,7 @@ Pagination
 
 @media only screen and (min-width: 1200px) and (max-width: 1599px) {
     .banner.banner-style-2 {
-        padding: 150px 0 200px 100px;
+        /* padding: 150px 0 200px 100px; */
         min-height: 600px;
         margin: 0 30px;
     }
@@ -8004,6 +8004,10 @@ body.op-modal-open {
     .header-offcanvasmenu .offcanvas-body .contact-inner .title {
         font-size: 16px;
     }
+    .header-action > ul > li {display:none;}
+    .main-demo-area {
+        padding: 70px 0 90px;
+    }
 }
 
 .header-offcanvasmenu .offcanvas-body .contact-inner .address {
@@ -8171,6 +8175,8 @@ body.op-modal-open {
         -webkit-transition: initial;
         transition: initial;
     }
+
+    .header-action > ul > li {display:none;}
 
     .mainmenu-nav .mainmenu .menu-item-has-children .axil-submenu li {
         opacity: 1;

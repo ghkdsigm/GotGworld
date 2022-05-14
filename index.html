@@ -77,12 +77,23 @@
                         </div>
                         <div class="header-main-nav">
                             <!-- Start Mainmanu Nav -->
-                            <nav class="mainmenu-nav">
+                            <nav class="mainmenu-nav" id="mobilemenu-popup">
+                                <div class="d-block d-lg-none">
+                                    <div class="mobile-nav-header">
+                                        <div class="mobile-nav-logo">
+                                            <a href="index-1.html">
+                                                <img class="light-mode" src="assets/images/img_navi_gotg.png" alt="Site Logo">
+                                                <img class="dark-mode" src="assets/media/logo-3.svg" alt="Site Logo">
+                                            </a>
+                                        </div>
+                                        <button class="mobile-menu-close" data-bs-dismiss="offcanvas"><i class="fas fa-times"></i></button>
+                                    </div>
+                                </div>
                                 <ul class="mainmenu" id="onepagenav">
-                                    <li><a href="#splash-demo">Home</a></li>
-                                    <li><a href="#splsh-features">GotG World</a></li>
-                                    <li><a href="#splash-why-choose">Jumoney</a></li>
-                                    <li><a href="#">GotG NFT</a></li>
+                                    <li><a href="#mainTop">Home</a></li>
+                                    <li><a href="#gotgworld">GotG World</a></li>
+                                    <li><a href="#jumoney">Jumoney</a></li>
+                                    <li><a href="#splash-demo">GotG NFT</a></li>
                                     <li><a href="https://www.bw.com/newTrade/spotTradding/gotg_usdt%E2%80%8B">Buy GotG</a></li>
                                 </ul>
                             </nav>
@@ -91,7 +102,14 @@
                         <div class="header-action">
                             <ul class="list-unstyled">
                                 <li class="buy-btn"><a href="https://themeforest.net/checkout/from_item/33996058?license=regular" class="axil-btn btn-fill-black">Get Started</a></li>
-                                <li class="buy-btn"><a href="https://themeforest.net/checkout/from_item/33996058?license=regular" class="axil-btn btn-borderd btn-fluid btn-primary">KR</a></li> 
+                                <li class="buy-btn"><a href="https://themeforest.net/checkout/from_item/33996058?license=regular" class="axil-btn btn-borderd btn-fluid btn-primary d-flex"> <image src="assets/images/gsolid.svg" style="margin-right: 5px;"></image> KR</a></li> 
+                                <li class="mobile-menu-btn sidemenu-btn d-lg-none d-block">
+                                    <button class="btn-wrap" data-bs-toggle="offcanvas" data-bs-target="#mobilemenu-popup">
+                                        <span></span>
+                                        <span></span>
+                                        <span></span>
+                                    </button>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -101,7 +119,7 @@
         <!--=====================================-->
         <!--=        Banner Area Start          =-->
         <!--=====================================-->
-        <div class="banner-style-2">
+        <div class="banner-style-2" style="max-width: 1920px; margin: 0 auto;" id="mainTop">
             <section class="banner banner-style-2 landerBg">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -138,6 +156,7 @@
                                             <span class="symbol">B</span>
                                         </div>
                                         <p class="title" style="margin:0;">보유 총 물량</p>
+                                        <div class="divider"></div>
                                         <div class="count-number h3">
                                             <!-- <span class="number count odometer odometer-auto-theme" data-count="360"><div class="odometer-inside"><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">3</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">6</span></span></span></span></span><span class="odometer-digit"><span class="odometer-digit-spacer">8</span><span class="odometer-digit-inner"><span class="odometer-ribbon"><span class="odometer-ribbon-inner"><span class="odometer-value">0</span></span></span></span></span></div></span> -->
                                             <span><em class="count_num3">0.0</em></span>
@@ -376,7 +395,7 @@
         <!--=====================================-->
         <!--=        Features Area Start        =-->
         <!--=====================================-->
-        <section class="section section-padding">
+        <section class="section section-padding" id="jumoney">
             <div class="container">
                 <div class="section-heading">
                     <span class="subtitle">탁월한 속도와 완벽한 안정성</span>
@@ -391,7 +410,7 @@
                                 </a>
                             </div>
                             <div class="content">
-                                <h4 class="title"><a href="single-portfolio.html">가격 증가구조</a></h4>
+                                <h5 class="title bold"><a href="single-portfolio.html">가격 증가구조</a></h5>
                                 <!-- <span class="subtitle">Structure</span> -->
                             </div>
                         </div>
@@ -404,7 +423,7 @@
                                 </a>
                             </div>
                             <div class="content">
-                                <h4 class="title"><a href="single-portfolio.html">투자자 보호 장치</a></h4>
+                                <h5 class="title bold"><a href="single-portfolio.html">투자자 보호 장치</a></h5>
                                 <!-- <span class="subtitle">Protection Device</span> -->
                             </div>
                         </div>
@@ -417,7 +436,7 @@
                                 </a>
                             </div>
                             <div class="content">
-                                <h4 class="title"><a href="single-portfolio.html">자산 보증 선순환</a></h4>
+                                <h5 class="title bold"><a href="single-portfolio.html">자산 보증 선순환</a></h5>
                                 <!-- <span class="subtitle">Virtuous Circulation</span> -->
                             </div>
                         </div>
@@ -607,7 +626,6 @@
     <script src="assets/js/vendor/sal.js"></script>
     <script src="assets/js/vendor/jquery.magnific-popup.min.js"></script>
     <script src="assets/js/vendor/js.cookie.js"></script>
-    <script src="assets/js/vendor/jquery.style.switcher.js"></script>
     <script src="assets/js/vendor/jquery.countdown.min.js"></script>
     <script src="assets/js/vendor/tilt.js"></script>
     <script src="assets/js/vendor/green-audio-player.min.js"></script>

@@ -35,4 +35,15 @@
     background-size: cover;
 }
 
+.divider {
+    width: 80%;
+    border-top-width: 5px;
+    height: 1px;
+    background: #b3b3b3;
+    margin: 10px auto;
+    display: inline-block;
+}
 
+.bold {
+    font-weight:bold;
+}
