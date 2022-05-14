@@ -3142,7 +3142,7 @@ Pagination
 }
 
 .banner.banner-style-2 {
-    margin: 0 95px;
+    margin: 0 60px;
     /* padding: 250px 0 300px 200px; */
     background-color: var(--color-link);
     border-radius: 60px;
@@ -4055,8 +4055,12 @@ Pagination
     -webkit-transition: var(--transition);
     transition: var(--transition);
     margin-bottom: 30px;
-    min-height: 340px;
+    min-height: 300px;
     padding: 20px 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 @media only screen and (max-width: 767px) {
@@ -4079,7 +4083,7 @@ Pagination
     font-weight: bold;
     color: var(--color-primary);
     font-family: var(--font-primary);
-    margin-bottom: 10px;
+    margin-bottom: 0;
     letter-spacing: -0.045em;
 }
 
@@ -4095,6 +4099,11 @@ Pagination
 
 .counterup-progress .title {
     color: var(--color-black);
+    margin:0;
+}
+
+.counterup-progress p.title {
+    font-weight:500;
 }
 
 .counterup-progress:hover, .counterup-progress.active {
