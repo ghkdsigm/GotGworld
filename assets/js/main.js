@@ -1,20 +1,10 @@
-
 var gotg_price = 0;
 
 // https://www.bw.com/api/data/v1/trades?marketId=4330&dataSize=2
 
 $.ajax({
     url: "https://www.bw.com/api/data/v1/trades?marketId=4330&dataSize=2", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
-    type: 'GET',
-    dataType: 'jsonp',
-    crossDomain: true,
-    async:    false,
-    jsonp:"callback",
-    success:function(data){
-        data = JSON.parse(data);
-        console.log(data)
-        // process data
-    },
+    method: "GET",
 })
 
 // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
