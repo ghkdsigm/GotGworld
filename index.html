@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>GotG</title>
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">   
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta property="og:title" content="Gotg World">
@@ -616,7 +617,12 @@
     <script src="assets/js/app.js"></script>
     <script src="assets/js/main.js"></script>
 
-    <script>        
+    <script>
+        if(location.protocol != 'https:') {
+            window.location = 'https://' + location.host + location.pathname;
+        }
+    </script>    
+    <!-- <script>        
         function getbithumb(coin){
             var url = "https://www.bw.com/api/data/v1/trades?marketId=4330&dataSize=2" //url 주소
             var result = UrlFetchApp.fetch(url); //url 가져옴
@@ -627,7 +633,7 @@
             
             return d.data.closing_price; //json 접근한 해당 코인의 마지막 거래가격을 반환(return)
         }
-    </script>
+    </script> -->
 </body>
 
 </html>

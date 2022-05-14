@@ -1,3 +1,4 @@
+
 var gotg_price = 0;
 
 // https://www.bw.com/api/data/v1/trades?marketId=4330&dataSize=2
