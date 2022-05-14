@@ -1,16 +1,20 @@
 var gotg_price = 0;
 
 // https://www.bw.com/api/data/v1/trades?marketId=4330&dataSize=2
+// https://www.bw.com/api/data/v1/entrusts?marketId=4330&dataSize=1
 
 $.ajax({
-    url: "https://www.bw.com/api/data/v1/trades?marketId=4330&dataSize=2", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
+    url: "http://www.bw.com/api/data/v1/entrusts?marketId=4330&dataSize=1", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
     method: "GET",
+    beforeSend: function(xhr){
+        xhr.withCredentials = true;
+     }
 })
 
 // HTTP 요청이 성공하면 요청한 데이터가 done() 메소드로 전달됨.
 .done(function(json) {
 	gotg_price = json;
-    console.log(gotg_price)
+    console.log(gotg_price.bids)
 //	$("#gotg_price").val(json);
 	setPrice(gotg_price);
 })
