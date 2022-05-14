@@ -1025,6 +1025,7 @@ input {
     transition: var(--transition);
     position: relative;
     z-index: 1;
+    width:100%;
 }
 
 .axil-btn.btn-borderd {
@@ -1050,7 +1051,7 @@ input {
     content: "";
     height: 300px;
     width: 300px;
-    background-color: var(--color-link);
+    background-color: var(--color-white);
     border-radius: 50%;
     position: absolute;
     top: 50%;
@@ -1064,8 +1065,9 @@ input {
 }
 
 .axil-btn.btn-fill-primary:hover {
-    background-color: var(--color-link);
-    border-color: var(--color-link);
+    background-color: var(--color-white);
+    border-color: var(--color-white);
+    color:var(--color-black);
 }
 
 .axil-btn.btn-fill-primary:hover::after {
@@ -1082,7 +1084,7 @@ input {
 }
 
 
-.axil-btn.btn-fill-primary::after {
+.axil-btn.btn-fill-black::after {
     content: "";
     height: 300px;
     width: 300px;
@@ -1112,13 +1114,38 @@ input {
 
 .axil-btn.btn-fill-white {
     background-color: var(--color-white);
-    box-shadow: 0px 48px 48px 0px rgba(0, 0, 0, 0.12);
-    color:#000000;
+    color: var(--color-black);
+    border: 1px solid var(--color-white);
+    overflow: hidden;
+}
+
+.axil-btn.btn-fill-white::after {
+    content: "";
+    height: 300px;
+    width: 300px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateY(-50%) translateX(-50%) scale(0);
+    -ms-transform: translateY(-50%) translateX(-50%) scale(0);
+    transform: translateY(-50%) translateX(-50%) scale(0);
+    -webkit-transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    z-index: -1;
 }
 
 .axil-btn.btn-fill-white:hover {
-    background-color: var(--color-black);
+    background-color: var(--color-primary);
+    border-color: var(--color-primary);
     color: var(--color-white);
+}
+
+.axil-btn.btn-fill-white:hover::after {
+    -webkit-transform: translateY(-50%) translateX(-50%) scale(1);
+    -ms-transform: translateY(-50%) translateX(-50%) scale(1);
+    transform: translateY(-50%) translateX(-50%) scale(1);
 }
 
 .axil-btn.btn-large {
@@ -2866,14 +2893,14 @@ Pagination
 }
 
 .banner .banner-content .subtitle {
-    font-size: var(--font-body-1);
+    font-size: var(--h5);
     margin-bottom: 40px;
     width: 90%;
     color: var(--color-white);
 }
 
 .banner .banner-content .axil-btn {
-    padding: 25px 65px;
+    padding: 20px 35px;
     box-shadow: 0 44px 84px -24px #5956e9;
 }
 
@@ -4102,9 +4129,9 @@ Pagination
     margin:0;
 }
 
-.counterup-progress p.title {
+/* .counterup-progress p.title {
     font-weight:500;
-}
+} */
 
 .counterup-progress:hover, .counterup-progress.active {
     background: var(--color-white);
@@ -6186,12 +6213,18 @@ Pagination
 
 .main-demo-area .single-demo .thumb h3 {
     color: var(--color-primary);
-    font-weight: 500;
+    font-weight: bold;
+    margin-top:40px;
 }
 
 .main-demo-area .single-demo .thumb p {
     color: var(--color-black);
-    font-weight: 500;
+    font-weight: 400;
+    font-size: var(--h6)
+}
+
+.inner-box {
+    min-height: 250px;
 }
 
 .main-demo-area .single-demo .thumb:before {
@@ -7364,7 +7397,7 @@ body.op-modal-open {
 
 .mainmenu > li > a {
     color: var(--color-body);
-    font-weight: 500;
+    font-weight: bold;
     font-size: var(--font-body-2);
     font-family: var(--font-primary);
     line-height: 60px;
@@ -7612,7 +7645,10 @@ body.op-modal-open {
 }
 
 .main-action > ul > li {
-    margin-right: 30px;
+    margin-right: 15px;
+    flex-basis: 180px;
+    width: 180px;
+    flex-grow: 0;
 }
 
 .main-action > ul > li:last-child {
