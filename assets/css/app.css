@@ -4107,7 +4107,7 @@ Pagination
 }
 
 .counterup-progress:hover, .counterup-progress.active {
-    background: var(--gradient-dark);
+    background: var(--color-white);
 }
 
 .counterup-progress.counterup-style-2 {
