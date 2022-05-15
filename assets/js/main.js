@@ -3,9 +3,10 @@ var gotg_price = 0;
 // https://www.bw.com/api/data/v1/trades?marketId=4330&dataSize=2
 // https://www.bw.com/api/data/v1/entrusts?marketId=4330&dataSize=1
 // https://www.bw.com/api/data/v1/klines?marketId=4330&type=1M&dataSize=1
+// https://cors-anywhere.herokuapp.com/https://www.bw.com/api/data/v1/klines?marketId=4330&type=1M&dataSize=1
 
 $.ajax({
-    url: " https://cors-anywhere.herokuapp.com/https://www.bw.com/api/data/v1/klines?marketId=4330&type=1M&dataSize=1", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
+    url: "https://hsh-proxy-server.herokuapp.com/https://www.bw.com/api/data/v1/klines?marketId=4330&type=1M&dataSize=1", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
     method: "GET",
 })
 
