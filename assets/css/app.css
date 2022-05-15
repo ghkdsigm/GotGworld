@@ -3217,6 +3217,9 @@ Pagination
 .banner.banner-style-2 .banner-content .title {
     color: var(--color-white);
 }
+.banner.banner-style-6 .banner-content .title {
+    color: var(--color-white);
+}
 
 .banner.banner-style-3 {
     padding: 220px 0 210px;
@@ -6574,18 +6577,26 @@ Pagination
     .splash-call-to-action .section-heading .title {
         font-size: 70px;
     }
+    .middleImg {
+        width: 500px;
+        top: -180px;
+        left: -125px;
+    }
+    
 }
 
 @media only screen and (max-width: 1199px) {
     .splash-call-to-action .section-heading .title {
         font-size: 60px;
     }
+    .middleImg {width:300px !important;}
 }
 
 @media only screen and (max-width: 767px) {
     .splash-call-to-action .section-heading .title {
         font-size: 50px;
     }
+    .middleImg {display:none;}
 }
 
 @media only screen and (max-width: 575px) {
