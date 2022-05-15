@@ -53,7 +53,7 @@
 }
 
 .lang_sel{ 
-    font-family: "Font Awesome 5 Free"; 
+    font-family: DM Sans,"Font Awesome 5 Free"; 
     font-weight:600; 
     text-align-last: center;
     text-align: center;
@@ -64,7 +64,7 @@
 }
 
 .lang_sel option{
-    font-family: "Font Awesome 5 Free"; 
+    font-family:  DM Sans,"Font Awesome 5 Free"; 
     font-weight:600;
     text-align-last: center;
     text-align: center;

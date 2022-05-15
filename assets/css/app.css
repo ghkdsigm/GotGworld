@@ -6661,7 +6661,7 @@ Pagination
 
 .splash-footer .footer-social li {
     display: inline-block;
-    margin-right: 25px;
+    /* margin-right: 25px; */
 }
 
 .splash-footer .footer-social li:last-child {
@@ -6700,12 +6700,12 @@ Pagination
 }
 
 .splash-footer .footer-bottom-link ul li {
-    padding: 0 30px;
+    padding: 0 10px;
 }
 
 @media only screen and (max-width: 991px) {
     .splash-footer .footer-bottom-link ul li {
-        padding: 0 20px;
+        padding: 0 10px;
     }
 }
 
@@ -9348,7 +9348,7 @@ body.op-modal-open {
 }
 
 .footer-bottom-link ul li::after {
-    content: "";
+    /* content: ""; */
     height: 4px;
     width: 4px;
     background-color: var(--color-gray-4);
