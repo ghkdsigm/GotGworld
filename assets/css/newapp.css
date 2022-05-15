@@ -10,14 +10,12 @@
 .section-heading > .title {
     font-weight:bold;
 }
-
 .section.spaceBg {
     background-image: url(../images/img_sec02_bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
 .thumb-ico-img img {
     max-width: 170px;
 }
@@ -27,14 +25,12 @@
     background-position: center;
     background-size: cover;
 }
-
 .banner-style-2.landerBg{
     background-image: url(../images/img_sec01_bg.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-
 .divider {
     width: 80%;
     border-top-width: 5px;
@@ -43,7 +39,56 @@
     margin: 10px auto;
     display: inline-block;
 }
-
 .bold {
     font-weight:bold;
+}
+.selLng .axil-btn.btn-borderd {
+    border: var(--border-gray);
+    color: #686868;
+}
+.selLng .axil-btn.btn-borderd:hover {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    border: var(--border-gray);
+}
+
+.lang_sel{ 
+    font-family: "Font Awesome 5 Free"; 
+    font-weight:600; 
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;    
+    padding: 20px 20px;
+    cursor:pointer;
+}
+
+.lang_sel option{
+    font-family: "Font Awesome 5 Free"; 
+    font-weight:600;
+    text-align-last: center;
+    text-align: center;
+    -ms-text-align-last: center;
+    -moz-text-align-last: center;
+    
+}
+.footer-up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.emailbt{
+    width: 200px; 
+    text-align: right;
+    position: relative;
+}
+.emailbt:before {
+    content: url(../../assets/media/icon/message.png);
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.row.footer-up > div {
+    width: auto;
 }

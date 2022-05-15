@@ -7396,7 +7396,7 @@ body.op-modal-open {
 }
 
 .mainmenu > li > a {
-    color: var(--color-body);
+    color: var(--color-black);
     font-weight: bold;
     font-size: var(--font-body-2);
     font-family: var(--font-primary);
