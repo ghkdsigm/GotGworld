@@ -3220,6 +3220,12 @@ Pagination
 .banner.banner-style-6 .banner-content .title {
     color: var(--color-white);
 }
+.banner.banner-style-7 .banner-content .title {
+    color: var(--color-white);
+}
+.banner.banner-style-8 .banner-content .title {
+    color: var(--color-white);
+}
 
 .banner.banner-style-3 {
     padding: 220px 0 210px;
@@ -10489,6 +10495,12 @@ body.op-modal-open {
 @media only screen and (max-width: 767px) {
     .section-padding-2 {
         padding: 60px 0 20px;
+    }
+    .splash-call-to-action.middle-bg-damda {
+        padding: 30px 20px;
+    }
+    .splash-call-to-action.middle-bg-damda  .sal-animate {
+        padding:15px 0;
     }
 }
 

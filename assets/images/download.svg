@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="30" height="30" viewBox="0 0 30 30">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: rgba(255,255,255,0);
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #99a1aa;
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #99a1aa;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_12159" data-name="사각형 12159" class="cls-1" width="30" height="30" transform="translate(1191 51)"/>
+    </clipPath>
+  </defs>
+  <g id="ic_download" class="cls-2" transform="translate(-1191 -51)">
+    <path id="패스_808" data-name="패스 808" class="cls-3" d="M16.558,12.275,9.486,19.348a1.411,1.411,0,0,1-2,0L.414,12.276a1.414,1.414,0,1,1,2-2l4.658,4.66V1.375A1.372,1.372,0,0,1,8.447,0,1.441,1.441,0,0,1,9.9,1.375V14.936l4.659-4.659a1.413,1.413,0,1,1,2,2" transform="translate(1197.513 52.581)"/>
+    <path id="패스_810" data-name="패스 810" class="cls-4" d="M5,5V9.842A2.353,2.353,0,0,0,7.353,12.2H23.9a2.353,2.353,0,0,0,2.353-2.353V5" transform="translate(1190.704 66.764)"/>
+  </g>
+</svg>
