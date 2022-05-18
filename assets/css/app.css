@@ -2842,6 +2842,9 @@ Pagination
         margin-top: -115px;
         padding: 150px 0 0;
     }
+    .banner-style-8.landerBg {
+        background-position: center !important;
+    }
 }
 
 @media only screen and (max-width: 991px) {
