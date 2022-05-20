@@ -149,8 +149,18 @@
 }
 
 .whitepaper-content a {
-    color:#000;
+    color: #000;
     margin: 15px 0;
+    border: 1px solid #ccc;
+    padding: 15px 20px;
+    min-width: 250px;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.whitepaper-content a:hover {
+    border-color:#3FB5EB;
+    color:#3FB5EB !important;
 }
 
 .whitepaper-content h5 span {
@@ -158,9 +168,9 @@
     font-size: 16px;
 }
 
-.whitepaper-content a:hover {
+/* .whitepaper-content a:hover {
     color:rgb(255, 145, 0);
-}
+} */
 
 .whitepaper-content a img {
     width:15px;
