@@ -2774,12 +2774,13 @@ Pagination
 }
 
 .about-quality .title {
-    color: var(--color-white);
+    color: var(--color-primary);
+    font-weight:bold;
 }
 
 .about-quality p {
     opacity: 0.5;
-    color: var(--color-white);
+    color: var(--color-black);
     -webkit-transition: var(--transition);
     transition: var(--transition);
 }
@@ -2880,6 +2881,13 @@ Pagination
 @media only screen and (max-width: 1199px) {
     .banner .banner-content .title {
         font-size: 60px;
+    }
+    .portionWrap .porCommon {
+        position: relative !important;
+        top:auto !important;
+        right:auto !important;
+        left:auto !important;
+        bottom:auto !important;
     }
 }
 
@@ -3229,6 +3237,10 @@ Pagination
 .banner.banner-style-8 .banner-content .title {
     color: var(--color-white);
 }
+.banner.banner-style-9 .banner-content .title {
+    color: var(--color-white);
+}
+
 
 .banner.banner-style-3 {
     padding: 220px 0 210px;
@@ -5419,14 +5431,15 @@ Pagination
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: inherit;
+    -webkit-align-items: inherit;
+    -ms-flex-align: inherit;
+    align-items: inherit;
 }
 
 .testimonial-grid .author-info .thumb img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    max-width:50px;
 }
 
 .testimonial-grid .author-info .content {
@@ -5443,9 +5456,10 @@ Pagination
 
 .testimonial-grid .author-info .content .name {
     font-weight: 500;
-    color: var(--color-text-dark);
+    color: var(--color-primary);
     letter-spacing: -0.04em;
     margin-bottom: 3px;
+    font-size:1.2rem;
 }
 
 .testimonial-grid .author-info .content .designation {
