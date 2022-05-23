@@ -139,6 +139,7 @@
 }
 .porCommon .services-grid.service-style-2 .content .title a{
     color: var(--color-primary);
+    font-size: var(--h4);
 }
 .footer-up {
     display: flex;

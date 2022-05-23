@@ -5459,11 +5459,11 @@ Pagination
     color: var(--color-primary);
     letter-spacing: -0.04em;
     margin-bottom: 3px;
-    font-size:1.2rem;
+    font-size: var(--h5);
 }
 
 .testimonial-grid .author-info .content .designation {
-    font-size: 14px;
+    font-size: var(--h7);
     color: var(--color-gray-2);
     letter-spacing: -0.025em;
 }
