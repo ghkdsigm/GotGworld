@@ -3219,6 +3219,9 @@ Pagination
     .banner.banner-style-2 {
         margin: 0 15px;
     }
+    .mobileAlign-center {
+        text-align:center;
+    }
 }
 
 .banner.banner-style-2 .banner-content {
@@ -4106,7 +4109,7 @@ Pagination
     -webkit-transition: var(--transition);
     transition: var(--transition);
     margin-bottom: 30px;
-    min-height: 300px;
+    min-height: 380px;
     padding: 20px 20px;
     align-items: center;
     justify-content: center;
