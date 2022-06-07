@@ -112,6 +112,7 @@
     padding: 10px 5px;
     width: 100%;
     border: 1px solid var(--color-fog);
+    display: none;
 }
 
 .lang_sel option{
