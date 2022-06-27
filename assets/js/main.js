@@ -156,3 +156,15 @@ $({ val : 0 }).animate({ val : 0 }, {
         $(".count_num5").text(num);
     }
 });
+
+$({ val : 0 }).animate({ val : 0.3 }, {
+    duration: 1000,
+    step: function() {
+        var num = numberWithCommas(this.val.toFixed(1));
+        $(".count_num7").text(num);
+    },
+    complete: function() {
+        var num = numberWithCommas(this.val.toFixed(1));
+        $(".count_num7").text(num);
+    }
+});
