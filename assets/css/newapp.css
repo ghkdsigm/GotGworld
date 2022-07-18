@@ -76,6 +76,13 @@
     background-position: center;
     margin-top: 0;
 }
+.banner-style-10.landerBg{
+    background-image: url(../images/newsBg.png);
+    background-repeat: no-repeat;
+    background-position: 50% -180PX;
+    background-size: cover;   
+    margin-top: 0;
+}
 .divider {
     width: 80%;
     border-top-width: 5px;
