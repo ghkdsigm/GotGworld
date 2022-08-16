@@ -185,9 +185,9 @@
 .middleImg {
     position: absolute;
     z-index: 999;
-    top: -300px;
+    top: -260px;
     left: -190px;
-    width: 700px;
+    width: 600px;
 }
 
 .text-right {
@@ -240,4 +240,29 @@
 .footerLogos {
     display: flex;
     flex-wrap: wrap;
+}
+
+
+@media only screen and (min-width: 1200px) and (max-width: 1599px) {
+    .middleImg {
+        width:400px;    
+        left: -80px;
+        top: -185px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+    .middleImg {
+        width:400px;    
+        left: -100px;
+        top: -145px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 799px) {
+    .middleImg {
+        width:400px;    
+        left: -100px;
+        top: -185px;
+    }
 }
