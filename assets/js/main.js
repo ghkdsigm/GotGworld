@@ -5,8 +5,13 @@ var gotg_price = 0;
 // https://www.bw.com/api/data/v1/klines?marketId=4330&type=1M&dataSize=1
 // https://cors-anywhere.herokuapp.com/https://www.bw.com/api/data/v1/klines?marketId=4330&type=1M&dataSize=1
 
+// $.ajax({
+//     url: "https://cors-anywhere.herokuapp.com/https://api.mexc.com/api/v3/avgPrice?symbol=GOTGUSDT", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
+//     method: "GET",
+// })
+
 $.ajax({
-    url: "https://cors-anywhere.herokuapp.com/https://api.mexc.com/api/v3/avgPrice?symbol=GOTGUSDT", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
+    url: "https://api.mexc.com/api/v3/avgPrice?symbol=GOTGUSDT", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
     method: "GET",
 })
 
