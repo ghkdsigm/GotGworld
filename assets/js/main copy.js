@@ -6,7 +6,7 @@ var gotg_price = 0;
 // https://cors-anywhere.herokuapp.com/https://www.bw.com/api/data/v1/klines?marketId=4330&type=1M&dataSize=1
 
 $.ajax({
-    url: "https://cors-anywhere.herokuapp.com/https://api.mexc.com/api/v3/avgPrice?symbol=GOTGUSDT", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
+    url: "https://www.zbg.com/exchange/api/v1/common/trade-history/gotg_usdt", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
     method: "GET",
 })
 
@@ -15,13 +15,11 @@ $.ajax({
     resdata = json
     //console.log(resdata.datas.slice(-1)[0])
 	//gotg_price = resdata.datas[0][4];
-    //gotg_price = resdata.datas.slice(-1)[0];
-    gotg_price = resdata.price
-    console.log(gotg_price)
+    gotg_price = resdata.datas.slice(-1)[0];
+    //console.log(gotg_price.price)
 //	$("#gotg_price").val(json);
-	setPrice(gotg_price);
+	setPrice(gotg_price.price);
 })
-
 // HTTP 요청이 실패하면 오류와 상태에 관한 정보가 fail() 메소드로 전달됨.
 .fail(function(xhr, status, errorThrown) {
 	console.log(errorThrown + " : " + status);
@@ -120,7 +118,6 @@ function setPrice(gotg_price){
 		duration: 1000,
 		step: function() {
 			var num = numberWithCommass(this.val.toFixed(2));
-            console.log(num)
 			$(".count_num1").text(num);
 		},
 		complete: function() {
@@ -128,7 +125,6 @@ function setPrice(gotg_price){
 			$(".count_num1").text(num);
 		}
 	});
-    //$(".count_num1").text(Math.floor(gotg_price));
 //	setPrice2(gotg_price);
 }
 
