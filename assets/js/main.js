@@ -11,7 +11,7 @@ var gotg_price = 0;
 // })
 
 $.ajax({
-    url: "https://cors-anywhere.herokuapp.com/https://api.mexc.com/api/v3/avgPrice?symbol=GOTGUSDT", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
+    url: "https://api.mexc.com/api/v3/avgPrice?symbol=GOTGUSDT", // 클라이언트가 HTTP 요청을 보낼 서버의 URL 주소
     method: "GET",
 })
 
